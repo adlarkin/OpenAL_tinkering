@@ -1,4 +1,4 @@
-# openal_tinkering
+# OpenAL_tinkering
 
 Testing some basic audio capabilities with OpenAL.
 
@@ -8,7 +8,7 @@ Testing some basic audio capabilities with OpenAL.
 
 ### Docker
 
-TODO fill this in
+The [docker/](docker/) directory of this repository contains files that allow you to use OpenAL inside of a Docker container.
 
 ### Building
 
@@ -36,3 +36,8 @@ Run either executable as follows (no command line arguments are needed):
 ```
 
 You should hear audio played to a device momentarily, assuming that an audio device exists and can be connected to.
+
+## Other things to note
+
+There's a [ycm config file](.ycm_extra_conf.py) in this repository that uses the [ycm vim plugin](https://github.com/ycm-core/YouCompleteMe) to give "intellisense" functionality.
+This repository's OpenAL [docker setup](docker/) also assumes that the ycm plugin is used, and this ycm config file can be used inside of Docker.
