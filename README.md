@@ -4,6 +4,15 @@ Testing some basic audio capabilities with OpenAL.
 
 [OpenAL-Soft](https://github.com/kcat/openal-soft) and [ALUT](http://distro.ibiblio.org/rootlinux/rootlinux-ports/more/freealut/freealut-1.1.0/doc/alut.html) are used. The [OpenAL documentation](https://www.openal.org/documentation/) is also a useful resource.
 
+## Requirements
+
+If you plan to use this repository locally (NOT through Docker), you'll need to install OpenAL and ALUT.
+On Ubuntu, you can do this with the following command:
+
+```bash
+sudo apt update && sudo apt install -y libopenal-dev libalut-dev
+```
+
 ## Usage
 
 ### Docker

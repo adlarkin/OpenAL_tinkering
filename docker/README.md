@@ -19,6 +19,12 @@ If you don't use this plugin, you can remove the steps for building this plugin 
 
 ### Starting a container from the built image
 
+The code from this repository is loaded into the Docker container at runtime as a volume.
+This means that you need to provide the location of this repository when you start the container.
+Replace `$REPO_DIR` in the command below with the location of the repository on your machine.
+
+_For example: if I cloned the repository to my `$HOME` (`~/`) directory, `$REPO_DIR` would become `~/`._
+
 ```bash
-./run.bash openal_testing
+./run.bash openal_testing $REPO_DIR
 ```
